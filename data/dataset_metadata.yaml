@@ -1,0 +1,111 @@
+cities_count: 125
+date_range: 2024-08-23 00:00:00 to 2025-08-22 00:00:00
+features:
+- datetime
+- city
+- state
+- latitude
+- longitude
+- population
+- hour
+- day_of_week
+- month
+- day_of_year
+- season
+- is_weekend
+- is_monsoon
+- is_summer
+- is_winter
+- is_holiday
+- temperature
+- humidity
+- pressure
+- wind_speed
+- wind_direction
+- precipitation
+- visibility
+- cloud_cover
+- dew_point
+- feels_like
+- uv_index
+- solar_radiation
+- heat_index
+- wind_chill
+- wet_bulb_temp
+- vapor_pressure
+- saturation_vapor_pressure
+- relative_humidity_max
+- relative_humidity_min
+- traffic_density
+- industrial_emission_factor
+- construction_activity
+- population_density_factor
+- green_cover_index
+- water_body_proximity
+- pm25
+- pm10
+- no2
+- so2
+- o3
+- co
+- nh3
+- aqi
+- temp_humidity_index
+- pollution_index
+- comfort_index
+generation_timestamp: '2025-08-24T07:51:52.044461'
+missing_values:
+  aqi: 0
+  city: 0
+  cloud_cover: 0
+  co: 0
+  comfort_index: 0
+  construction_activity: 0
+  datetime: 0
+  day_of_week: 0
+  day_of_year: 0
+  dew_point: 0
+  feels_like: 0
+  green_cover_index: 0
+  heat_index: 0
+  hour: 0
+  humidity: 27264
+  industrial_emission_factor: 0
+  is_holiday: 0
+  is_monsoon: 0
+  is_summer: 0
+  is_weekend: 0
+  is_winter: 0
+  latitude: 0
+  longitude: 0
+  month: 0
+  nh3: 0
+  no2: 0
+  o3: 0
+  pm10: 27386
+  pm25: 27516
+  pollution_index: 0
+  population: 0
+  population_density_factor: 0
+  precipitation: 0
+  pressure: 0
+  relative_humidity_max: 0
+  relative_humidity_min: 0
+  saturation_vapor_pressure: 0
+  season: 0
+  so2: 0
+  solar_radiation: 0
+  state: 0
+  temp_humidity_index: 0
+  temperature: 27323
+  traffic_density: 0
+  uv_index: 0
+  vapor_pressure: 0
+  visibility: 0
+  water_body_proximity: 0
+  wet_bulb_temp: 0
+  wind_chill: 0
+  wind_direction: 0
+  wind_speed: 0
+total_features: 52
+total_records: 1092125
