@@ -1,0 +1,112 @@
+# Weather Prediction AI/ML Project Configuration
+
+# Data Configuration
+data:
+  cities_count: 120
+  start_date: "2024-08-23"
+  end_date: "2025-08-22"
+  frequency: "H"  # Hourly data
+  features_count: 35
+  output_formats: ["csv", "parquet"]
+  
+# Model Configuration
+models:
+  regression_models:
+    - "LinearRegression"
+    - "Ridge"
+    - "Lasso"
+    - "RandomForest"
+    - "GradientBoosting"
+    - "LightGBM"
+    - "XGBoost"
+  
+  time_series_models:
+    - "SARIMAX"
+    - "Prophet"
+    - "NeuralProphet"
+  
+  metrics:
+    - "MAE"
+    - "MSE"
+    - "RMSE"
+    - "R2"
+    - "MAPE"
+  
+  hyperparameter_tuning:
+    cv_folds: 5
+    n_iter: 50
+    scoring: "neg_mean_absolute_error"
+
+# UI Configuration
+ui:
+  themes:
+    - "light"
+    - "dark"
+    - "monsoon"
+    - "summer"
+    - "winter"
+  
+  default_theme: "dark"
+  animation_speed: "medium"
+  chart_colors:
+    primary: "#3B82F6"
+    secondary: "#10B981"
+    accent: "#F59E0B"
+    danger: "#EF4444"
+    success: "#22C55E"
+
+# Prediction Configuration
+prediction:
+  forecast_days: 7
+  confidence_interval: 0.95
+  targets:
+    - "temperature"
+    - "humidity"
+    - "aqi"
+    - "pm25"
+    - "pm10"
+    - "no2"
+    - "so2"
+    - "o3"
+    - "co"
+
+# Cache Configuration
+cache:
+  enabled: true
+  directory: "cache"
+  model_cache_hours: 24
+  data_cache_hours: 6
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/weather_prediction.log"
+
+# API Configuration (for future real-time integration)
+api:
+  weather_api_key: ""  # To be set via environment variable
+  aqi_api_key: ""      # To be set via environment variable
+  rate_limit: 1000     # requests per hour
+
+# Export Configuration
+export:
+  formats: ["csv", "parquet", "pdf", "png", "html"]
+  max_file_size_mb: 100
+  compression: "gzip"
+
+# Voice Assistant Configuration
+voice:
+  enabled: true
+  language: "en-IN"
+  confidence_threshold: 0.7
+  timeout: 5
+
+# Gamification Configuration
+gamification:
+  enabled: true
+  difficulty_levels: ["easy", "medium", "hard"]
+  scoring_system:
+    correct_prediction: 10
+    close_prediction: 5
+    wrong_prediction: 0
